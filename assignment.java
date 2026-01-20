@@ -99,6 +99,751 @@ public class SwitchExample {
     }
 }
 
+//Assignment 3: Hello World Variations
+public class HelloVariation {
+    public static void main(String[] args) {
+        System.out.println("janani");
+        System.out.println("Anna adarsh college");
+    }
+}
+
+//Assignment 4: Variables & Data Types
+public class Assignment4 {
+    public static void main(String[] args) {
+
+        String name = "Janani";
+        int age = 20;
+        double salary = 25000.75;
+        float percentage = 85.5f;
+        boolean isWorking = false;
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
+        System.out.println("Percentage: " + percentage);
+        System.out.println("Is Working: " + isWorking);
+    }
+}
+
+//Assignment 5: Choose Correct Data Type
+public class Assignment5 {
+    public static void main(String[] args) {
+
+        long mobileNumber = 9876543210L;
+        double bankBalance = 45230.75;
+        char grade = 'A';
+        int studentCount = 60;
+        boolean isStudentPresent = true;
+
+        System.out.println("Mobile Number: " + mobileNumber);
+        System.out.println("Bank Balance: " + bankBalance);
+        System.out.println("Grade: " + grade);
+        System.out.println("Student Count: " + studentCount);
+        System.out.println("Is Student Present: " + isStudentPresent);
+    }
+}
+//Explanation (Why this data type?)
+//Mobile number – long
+//Mobile numbers are large value
+
+//Bank balance – double
+//Bank balance contains decimal values
+//double stores decimal numbers accurately
+
+//Grade – char
+//Grade is a single character (A, B, C)
+//So char is suitable
+
+// Student count – int
+//Count is a whole number
+
+//Is student present? – boolean
+//Answer is only true or false
+//boolean is used for conditions
+
+//Assignment 6: Operator Practice
+// 1. Add two numbers
+public class AddNumbers {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        int sum = a + b;
+        System.out.println("Sum = " + sum);
+    }
+}
+//2. Find remainder
+public class Remainder {
+    public static void main(String[] args) {
+        int a = 17, b = 5;
+        int rem = a % b;
+        System.out.println("Remainder = " + rem);
+    }
+}
+//3. Compare two numbers
+public class CompareNumbers {
+    public static void main(String[] args) {
+        int a = 15, b = 10;
+
+        System.out.println(a > b);
+        System.out.println(a < b);
+        System.out.println(a == b);
+    }
+}
+//4. Check eligibility using logical operators
+public class Eligibility {
+    public static void main(String[] args) {
+
+        int age = 19;
+        boolean hasId = true;
+
+        if (age >= 18 && hasId) {
+            System.out.println("Eligible");
+        } else {
+            System.out.println("Not Eligible");
+        }
+    }
+}
+
+//Assignment 7: Type Casting Practice
+//1. Convert int → double (Implicit Casting)
+public class IntToDouble {
+    public static void main(String[] args) {
+        int a = 10;
+        double b = a;
+        System.out.println(b);
+    }
+}
+//2. Convert double → int (Explicit Casting)
+public class DoubleToInt {
+    public static void main(String[] args) {
+        double a = 12.75;
+        int b = (int) a;
+        System.out.println(b);
+    }
+}
+//3. Show data loss example
+public class DataLoss {
+    public static void main(String[] args) {
+        double a = 9.99;
+        int b = (int) a;
+        System.out.println(b);
+    }
+}
+//4. Fix integer division issue
+public class DivisionFix {
+    public static void main(String[] args) {
+        int a = 5, b = 2;
+        double result = (double) a / b;
+        System.out.println(result);
+    }
+}
+
+//Assignment 8: Ternary Programs
+//1. Check even or odd
+public class EvenOdd {
+    public static void main(String[] args) {
+        int num = 7;
+        String result = (num % 2 == 0) ? "Even" : "Odd";
+        System.out.println(result);
+    }
+}
+//2. Check pass or fail
+public class PassFail {
+    public static void main(String[] args) {
+        int mark = 45;
+        String result = (mark >= 40) ? "Pass" : "Fail";
+        System.out.println(result);
+    }
+}
+//3. Find maximum of two numbers
+public class Maximum {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        int max = (a > b) ? a : b;
+        System.out.println(max);
+    }
+}
+//4. Apply discount logic
+public class Discount {
+    public static void main(String[] args) {
+        int amount = 1200;
+        int finalAmount = (amount > 1000) ? amount - 100 : amount;
+        System.out.println(finalAmount);
+    }
+}
+
+//Assignment 9: Ternary vs if-else
+//1. Pass/Fail using if-else
+public class PassFailIfElse {
+    public static void main(String[] args) {
+        int mark = 45;
+
+        if (mark >= 40) {
+            System.out.println("Pass");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+//2. Same program using ternary operator
+public class PassFailTernary {
+    public static void main(String[] args) {
+        int mark = 45;
+
+        String result = (mark >= 40) ? "Pass" : "Fail";
+        System.out.println(result);
+    }
+}
+//3. Which one is more readable? Why?
+//Answer:
+//if-else is more readable for beginners
+//It is easy to understand and debug
+//Ternary is shorter but confusing for complex conditions
+
+//Assignment 10: if-else Programs
+//1. Check eligible to vote
+public class VoteEligibility {
+    public static void main(String[] args) {
+        int age = 20;
+
+        if (age >= 18) {
+            System.out.println("Eligible to Vote");
+        } else {
+            System.out.println("Not Eligible to Vote");
+        }
+    }
+}
+//2. Check positive or negative number
+public class PositiveNegative {
+    public static void main(String[] args) {
+        int num = -5;
+
+        if (num >= 0) {
+            System.out.println("Positive Number");
+        } else {
+            System.out.println("Negative Number");
+        }
+    }
+}
+//3. Check largest of three numbers
+public class LargestOfThree {
+    public static void main(String[] args) {
+        int a = 10, b = 25, c = 15;
+
+        if (a >= b && a >= c) {
+            System.out.println(a + " is largest");
+        } else if (b >= a && b >= c) {
+            System.out.println(b + " is largest");
+        } else {
+            System.out.println(c + " is largest");
+        }
+    }
+}
+//4. Login validation program
+[6:34 pm, 20/1/2026] Janani☺️: public class LoginValidation {
+    public static void main(String[] args) {
+        String username = "admin";
+        String password = "1234";
+
+        if (username.equals("admin") && password.equals("1234")) {
+            System.out.println("Login Successful");
+        } else {
+            System.out.println("Invalid Login");
+        }
+    }
+}
+
+// Assignment 11: else-if Ladder
+//1. Grade system
+public class GradeSystem {
+    public static void main(String[] args) {
+        int mark = 78;
+
+        if (mark >= 90) {
+            System.out.println("Grade A");
+        } else if (mark >= 75) {
+            System.out.println("Grade B");
+        } else if (mark >= 60) {
+            System.out.println("Grade C");
+        } else if (mark >= 40) {
+            System.out.println("Grade D");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+//2. Electricity bill calculation
+[6:36 pm, 20/1/2026] Janani☺️: public class ElectricityBill {
+    public static void main(String[] args) {
+        int units = 120;
+        double bill;
+
+        if (units <= 50) {
+            bill = units * 1.5;
+        } else if (units <= 100) {
+            bill = (50 * 1.5) + (units - 50) * 2.0;
+        } else {
+            bill = (50 * 1.5) + (50 * 2.0) + (units - 100) * 3.0;
+        }
+
+        System.out.println("Bill Amount = " + bill);
+    }
+}
+// 3. Student result classification
+public class ResultClassification {
+    public static void main(String[] args) {
+        int mark = 65;
+
+        if (mark >= 75) {
+            System.out.println("Distinction");
+        } else if (mark >= 60) {
+            System.out.println("First Class");
+        } else if (mark >= 50) {
+            System.out.println("Second Class");
+        } else if (mark >= 40) {
+            System.out.println("Pass");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+
+//Assignment 12: Switch Case
+// 1. Day number → Day name
+public class DayName {
+    public static void main(String[] args) {
+        int day = 3;
+
+        switch (day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            case 3: System.out.println("Wednesday"); break;
+            case 4: System.out.println("Thursday"); break;
+            case 5: System.out.println("Friday"); break;
+            case 6: System.out.println("Saturday"); break;
+            case 7: System.out.println("Sunday"); break;
+            default: System.out.println("Invalid Day");
+        }
+    }
+}
+//2. Simple calculator
+public class Calculator {
+    public static void main(String[] args) {
+        int a = 10, b = 5;
+        char op = '+';
+
+        switch (op) {
+            case '+': System.out.println(a + b); break;
+            case '-': System.out.println(a - b); break;
+            case '*': System.out.println(a * b); break;
+            case '/': System.out.println(a / b); break;
+            default: System.out.println("Invalid Operator");
+        }
+    }
+}
+//3. Menu-driven program
+public class MenuProgram {
+    public static void main(String[] args) {
+        int choice = 2;
+
+        switch (choice) {
+            case 1: System.out.println("Tea"); break;
+            case 2: System.out.println("Coffee"); break;
+            case 3: System.out.println("Juice"); break;
+            default: System.out.println("Invalid Choice");
+        }
+    }
+}
+
+//Assignment 13: for Loop
+//Print numbers 1 to 10
+class Print1to10 {
+    public static void main(String[] args) {
+        for(int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+//Print even numbers (1 to 20)
+class EvenNumbers {
+    public static void main(String[] args) {
+        for(int i = 1; i <= 20; i++) {
+            if(i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+//Multiplication table (example: table of 5)
+class MultiplicationTable {
+    public static void main(String[] args) {
+        int n = 5;
+        for(int i = 1; i <= 10; i++) {
+            System.out.println(n + " x " + i + " = " + (n * i));
+        }
+    }
+}
+//Sum of first 10 numbers
+class SumFirst10 {
+    public static void main(String[] args) {
+        int sum = 0;
+        for(int i = 1; i <= 10; i++) {
+            sum = sum + i;
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
+
+//Assignment 14: while Loop
+//Countdown program
+class Countdown {
+    public static void main(String[] args) {
+        int n = 10;
+        while(n >= 1) {
+            System.out.println(n);
+            n--;
+        }
+    }
+}
+//class countdown
+class Countdown {
+    public static void main(String[] args) {
+        int n = 10;
+        while(n >= 1) {
+            System.out.println(n);
+            n--;
+        }
+    }
+}
+//Reverse a number
+class ReverseNumber {
+    public static void main(String[] args) {
+        int num = 1234;
+        int rev = 0;
+
+        while(num != 0) {
+            rev = rev * 10 + num % 10;
+            num = num / 10;
+        }
+
+        System.out.println("Reversed number = " + rev);
+    }
+}
+//Sum of digits
+class SumOfDigits {
+    public static void main(String[] args) {
+        int num = 1234;
+        int sum = 0;
+
+        while(num != 0) {
+            sum = sum + num % 10;
+            num = num / 10;
+        }
+
+        System.out.println("Sum of digits = " + sum);
+    }
+}
+
+//Assignment 15 : do-while loop
+//ATM PIN Retry System 
+import java.util.Scanner;
+
+public class ATM {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int pin = 1234;
+        int input;
+
+        do {
+            System.out.print("Enter PIN: ");
+            input = sc.nextInt();
+        } while (input != pin);
+
+        System.out.println("PIN correct. Access granted.");
+    }
+}
+//Menu-Driven Program 
+import java.util.Scanner;
+
+public class Menu {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("1. Hello");
+            System.out.println("2. Exit");
+            System.out.print("Enter choice: ");
+            choice = sc.nextInt();
+
+            if (choice == 1) {
+                System.out.println("Hello User");
+            }
+
+        } while (choice != 2);
+
+        System.out.println("Program ended");
+    }
+}
+//Login Attempt System
+import java.util.Scanner;
+
+public class Login {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String user;
+        String pass;
+
+        do {
+            System.out.print("Username: ");
+            user = sc.next();
+
+            System.out.print("Password: ");
+            pass = sc.next();
+
+        } while (!user.equals("admin") || !pass.equals("123"));
+
+        System.out.println("Login successful");
+    }
+}
+
+//Mini project 1: student result system
+//Use if else/ternary
+//Pass/fail
+//Grade
+//Scholarship eligibility
+import java.util.Scanner;
+
+public class StudentResultSystem {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter student name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter marks (0 - 100): ");
+        int marks = sc.nextInt();
+
+        // Pass or Fail (ternary)
+        String result = (marks >= 40) ? "Pass" : "Fail";
+
+        // Grade (if-else)
+        String grade;
+        if (marks >= 85) {
+            grade = "A";
+        } else if (marks >= 70) {
+            grade = "B";
+        } else if (marks >= 55) {
+            grade = "C";
+        } else if (marks >= 40) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        // Scholarship Eligibility (ternary)
+        String scholarship = (marks >= 75) ? "Eligible" : "Not Eligible";
+
+        // Output
+        System.out.println("\n--- Student Result ---");
+        System.out.println("Name       : " + name);
+        System.out.println("Marks      : " + marks);
+        System.out.println("Result     : " + result);
+        System.out.println("Grade      : " + grade);
+        System.out.println("Scholarship: " + scholarship);
+
+        sc.close();
+    }
+}
+// sample output
+Enter student name: Janani
+Enter marks (0 - 100): 82
+
+--- Student Result ---
+Name       : Janani
+Marks      : 82
+Result     : Pass
+Grade      : B
+Scholarship: Eligible
+
+//Mini project 2: voter eligibility system
+//With user input
+//If else version
+//Switch- case version
+//Print rejection reason
+import java.util.Scanner;
+
+public class VoterEligibilityIfElse {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter age: ");
+        int age = sc.nextInt();
+        sc.nextLine(); 
+
+        System.out.print("Are you an Indian citizen? (yes/no): ");
+        String citizen = sc.nextLine();
+
+        System.out.print("Do you have a Voter ID? (yes/no): ");
+        String voterId = sc.nextLine();
+
+        if (age < 18) {
+            System.out.println(" Not Eligible to Vote");
+            System.out.println("Reason: Age must be 18 or above");
+        } 
+        else if (citizen.equalsIgnoreCase("yes")) {
+            System.out.println(" Not Eligible to Vote");
+            System.out.println("Reason: Must be an Indian citizen");
+        } 
+        else if (voterId.equalsIgnoreCase("yes")) {
+            System.out.println(" Not Eligible to Vote");
+            System.out.println("Reason: Voter ID is required");
+        } 
+        else {
+            System.out.println(" Eligible to Vote");
+        }
+
+        sc.close();
+    }
+}
+// sample output
+// Enter age: 16
+//Are you an Indian citizen? (yes/no): yes
+//Do you have a Voter ID? (yes/no): yes
+// Not Eligible to Vote
+//Reason: Age must be 18 or above
+
+//Mini project 3: loop- based system 
+//Print Students Attendance List (for loop)
+import java.util.Scanner;
+
+public class AttendanceList {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of students: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        System.out.println("\nPresent Students List:");
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Enter student " + i + " name: ");
+            String name = sc.nextLine();
+            System.out.println(i + ". " + name);
+        }
+
+        sc.close();
+    }
+}
+//Login Retry System (Max 3 Attempts) – while loop
+import java.util.Scanner;
+
+public class LoginRetrySystem {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String correctUser = "admin";
+        String correctPass = "1234";
+
+        int attempts = 0;
+
+        while (attempts < 3) {
+            System.out.print("Enter username: ");
+            String user = sc.nextLine();
+
+            System.out.print("Enter password: ");
+            String pass = sc.nextLine();
+
+            if (user.equals(correctUser) && pass.equals(correctPass)) {
+                System.out.println("✅ Login Successful");
+                break;
+            } else {
+                attempts++;
+                System.out.println("❌ Invalid credentials");
+            }
+        }
+
+        if (attempts == 3) {
+            System.out.println("🚫 Account Locked. Maximum attempts exceeded.");
+        }
+
+        sc.close();
+    }
+}
+//Number Guessing Game – do-while loop
+import java.util.Scanner;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int secretNumber = 7;
+        int guess;
+
+        do {
+            System.out.print("Guess the number (1–10): ");
+            guess = sc.nextInt();
+
+            if (guess > secretNumber) {
+                System.out.println("Too High!");
+            } else if (guess < secretNumber) {
+                System.out.println("Too Low!");
+            } else {
+                System.out.println("🎉 Correct Guess!");
+            }
+        } while (guess != secretNumber);
+
+        sc.close();
+    }
+}
+
+//Assignment 16: Debug the Code (Java)
+Int age = "20";
+double salary = 25000;
+Char grade = "A";
+boolean status = " true";
+
+public class DebugExample {
+    public static void main(String[] args) {
+
+        int age = 20;
+        double salary = 25000;
+        char grade = 'A';
+        boolean status = true;
+
+        System.out.println(age);
+        System.out.println(salary);
+        System.out.println(grade);
+        System.out.println(status);
+    }
+}
+
+// Assignment 17 : explain
+//1. Why java is strongly typed?
+//Java is strongly typed to prevent type errors and improve program safety.
+
+//2. Why main() is static?
+//main() is static because JVM must access it without creating an object.
+
+//3. Difference between break and continue
+//break exits the loop, while continue skips the current iteration.
+
+//4. for vs while vs do- while
+//for → known iterations
+//while → condition based
+//do-while → executes at least once
+
+
+
+
+
+
 
 
 
