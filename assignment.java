@@ -504,16 +504,7 @@ class Countdown {
         }
     }
 }
-//class countdown
-class Countdown {
-    public static void main(String[] args) {
-        int n = 10;
-        while(n >= 1) {
-            System.out.println(n);
-            n--;
-        }
-    }
-}
+
 //Reverse a number
 class ReverseNumber {
     public static void main(String[] args) {
@@ -710,11 +701,11 @@ public class VoterEligibilityIfElse {
     }
 }
 // sample output
-// Enter age: 16
-//Are you an Indian citizen? (yes/no): yes
-//Do you have a Voter ID? (yes/no): yes
-// Not Eligible to Vote
-//Reason: Age must be 18 or above
+Enter age: 16
+Are you an Indian citizen? (yes/no): yes
+Do you have a Voter ID? (yes/no): yes
+Not Eligible to Vote
+Reason: Age must be 18 or above
 
 //Mini project 3: loop- based system 
 //Print Students Attendance List (for loop)
@@ -795,7 +786,7 @@ public class NumberGuessingGame {
             } else if (guess < secretNumber) {
                 System.out.println("Too Low!");
             } else {
-                System.out.println("🎉 Correct Guess!");
+                System.out.println(" Correct Guess!");
             }
         } while (guess != secretNumber);
 
