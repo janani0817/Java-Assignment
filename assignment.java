@@ -339,7 +339,7 @@ public class LargestOfThree {
     }
 }
 //4. Login validation program
-[6:34 pm, 20/1/2026] Janani☺️: public class LoginValidation {
+ public class LoginValidation {
     public static void main(String[] args) {
         String username = "admin";
         String password = "1234";
@@ -372,7 +372,7 @@ public class GradeSystem {
     }
 }
 //2. Electricity bill calculation
-[6:36 pm, 20/1/2026] Janani☺️: public class ElectricityBill {
+ public class ElectricityBill {
     public static void main(String[] args) {
         int units = 120;
         double bill;
@@ -760,16 +760,16 @@ public class LoginRetrySystem {
             String pass = sc.nextLine();
 
             if (user.equals(correctUser) && pass.equals(correctPass)) {
-                System.out.println("✅ Login Successful");
+                System.out.println("Login Successful");
                 break;
             } else {
                 attempts++;
-                System.out.println("❌ Invalid credentials");
+                System.out.println(" Invalid credentials");
             }
         }
 
         if (attempts == 3) {
-            System.out.println("🚫 Account Locked. Maximum attempts exceeded.");
+            System.out.println(" Account Locked. Maximum attempts exceeded.");
         }
 
         sc.close();
